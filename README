@@ -1,0 +1,19 @@
+redir    - a utility for redirecting tcp connections
+ 
+Author:  Nigel Metheringham
+         Nigel.Metheringham@ThePLAnet.net
+
+Based on, but much modified from, code originally written by
+sammy@freenet.akron.oh.us - original header is below.
+
+redir is released under the GNU General Public license,
+version 2, or at your discretion, any later version.
+
+redir is currently maintained by Sam Creasey (sammy@oh.verio.com).
+Please send patches, etc. there.
+
+
+build: gcc redir.c 
+usage: ./a.out --lport=8080 --laddr=0.0.0.0 --caddr=127.0.0.1 --cport=80
+makes a tunnel from 127.0.0.1:80 to 0.0.0.0:8080
+
